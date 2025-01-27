@@ -5,6 +5,7 @@ import main
 from pathlib import Path
 import shutil
 from PIL import Image, ImageOps
+import openpyxl
 
 bd = pd.read_excel('bd_imoveis.xlsx')
 

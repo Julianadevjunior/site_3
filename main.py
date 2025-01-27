@@ -3,6 +3,7 @@ import pandas as pd
 from pathlib import Path
 import shutil
 from PIL import Image, ImageOps
+import openpyxl
 
 # Função para corrigir a orientação da imagem
 def correct_image_orientation(image):
