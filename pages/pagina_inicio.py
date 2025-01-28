@@ -51,14 +51,12 @@ for num_page in range(0, len(os.listdir('pages'))):
     tipo = bd['pronto'].loc[num_page]
     with colunas[num_page % num_colunas]:
         if num_page != 0:
-            cont = st.container(border=True, height=620)
+            cont = st.container(border=True, height=650)
             with cont:
                 pasta_images = [os.listdir(f'images/imovel_{num_page}')]
                 correto = sorted(pasta_images[0])
                 imagem = f'images/imovel_{num_page}/{correto[0]}'
-                st.write({pasta_images[0][0]})
                 # Carregar e rotacionar imagem com cache
-                st.write(correto)
                 img = load_and_rotate_image(imagem, st.session_state["rotations"][0])
                 corrected_image = correct_image_orientation(img)
                 dimencionado = resize_image(corrected_image, size=(300, 300))
@@ -142,6 +140,10 @@ for num_page in range(0, len(os.listdir('pages'))):
                             f'<div style="text-align:center; font-size:{font_2}px">🚘 -> {vaga}</div>',
                             unsafe_allow_html=True)
 
-                st.page_link(f'pages/pagina_{num_page}.py')
+                col7, col8, col9 = st.columns([1, 10, 1])
+                with col8:
+                    cont_link = st.container(border=True)
+                    with cont_link:
+                        st.page_link(f'pages/pagina_{num_page}.py')
 
 
