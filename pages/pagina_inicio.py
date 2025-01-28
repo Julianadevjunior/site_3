@@ -51,7 +51,7 @@ for num_page in range(0, len(os.listdir('pages'))):
     tipo = bd['pronto'].loc[num_page]
     with colunas[num_page % num_colunas]:
         if num_page != 0:
-            cont = st.container(border=True, height=700)
+            cont = st.container(border=True, height=800)
             with cont:
                 pasta_images = [os.listdir(f'images/imovel_{num_page}')]
                 correto = sorted(pasta_images[0])
