@@ -57,7 +57,7 @@ for num_page in range(0, len(os.listdir('pages'))):
                 try:
                     caminho = f"0{pasta_images[0][0][pasta_images[0][0].index('.'):]}"
                     imagem = f'images/imovel_{num_page}/{caminho}'
-                    st.write('sim')
+                    st.write('sim', caminho)
                 except:
                     imagem = f'images/imovel_{num_page}/{pasta_images[0][0]}'
                     st.write('não')
