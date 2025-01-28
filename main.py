@@ -30,5 +30,5 @@ pagina_8 = st.Page(title='👉🏾Saiba mais cod-8', page='pages/pagina_8.py')
 pagina_9 = st.Page(title='👉🏾Saiba mais cod-9', page='pages/pagina_9.py')
 pagina_10 = st.Page(title='👉🏾Saiba mais cod-10', page='pages/pagina_10.py')
 
-pg = st.navigation(pages=[pagina_inicio, pagina_1, pagina_2, pagina_3, pagina_4, pagina_5, pagina_6, pagina_7, pagina_8, pagina_9, pagina_10])
+pg = st.navigation(pages=[pagina_inicio, pagina_1, pagina_2, pagina_3, pagina_4, pagina_5, pagina_6, pagina_7, pagina_8, pagina_9, pagina_10], position='hidden')
 pg.run()
