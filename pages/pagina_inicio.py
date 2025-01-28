@@ -83,6 +83,9 @@ for num_page in range(0, len(os.listdir('pages'))):
                         st.markdown(
                             f'<div style="text-align:center; font-size:{font_2}px">{bairro}</div>',
                             unsafe_allow_html=True)
+                        st.markdown(
+                            f'<div style="text-align:center; font-size:{font_2}px">░░░░░░░░░░░░░░░░░</div>',
+                            unsafe_allow_html=True)
 
                     col4, col5, col6 = st.columns([2, 1, 2])
                     with col4:
@@ -144,6 +147,6 @@ for num_page in range(0, len(os.listdir('pages'))):
                 with col8:
                     cont_link = st.container(border=True)
                     with cont_link:
-                        st.page_link(f'pages/pagina_{num_page}.py')
+                        st.page_link(f'pages/pagina_{num_page}.py', use_container_width=True)
 
 
