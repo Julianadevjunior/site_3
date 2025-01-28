@@ -55,7 +55,7 @@ for num_page in range(0, len(os.listdir('pages'))):
             with cont:
                 pasta_images = [os.listdir(f'images/imovel_{num_page}')]
                 imagem = f'images/imovel_{num_page}/{pasta_images[0][0]}'
-                st.write(pasta_images[0][0])
+                st.write(imagem[imagem.index('.'):] in pasta_images)
                 print('************************')
                 print(f'{pasta_images[0][0]}')
                 # Carregar e rotacionar imagem com cache
