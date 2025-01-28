@@ -46,8 +46,8 @@ num_colunas = 2
 colunas = st.columns(num_colunas)
 
 for num_page in range(0, len(os.listdir('pages'))):
-    font_1 = 15
-    font_2 = 12
+    font_1 = 17
+    font_2 = 14
     tipo = bd['pronto'].loc[num_page]
     with colunas[num_page % num_colunas]:
         if num_page != 0:
