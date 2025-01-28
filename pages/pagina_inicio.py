@@ -46,8 +46,8 @@ num_colunas = 2
 colunas = st.columns(num_colunas)
 
 for num_page in range(0, len(os.listdir('pages'))):
-    font_1 = 18
-    font_2 = 15
+    font_1 = 15
+    font_2 = 12
     tipo = bd['pronto'].loc[num_page]
     with colunas[num_page % num_colunas]:
         if num_page != 0:
@@ -78,7 +78,7 @@ for num_page in range(0, len(os.listdir('pages'))):
                     col1, col2, col3 = st.columns([1, 4, 1])
                     with col2:
                         st.markdown(
-                            f'<div style="text-align:center; font-size:{font_1}px">Total R${format_valor(valor)}</div>',
+                            f'<div style="text-align:center; font-size:{font_1}px">Total <b>R${format_valor(valor)}</b></div>',
                             unsafe_allow_html=True)
                         st.markdown(
                             f'<div style="text-align:center; font-size:{font_2}px">{bairro}</div>',
@@ -114,7 +114,7 @@ for num_page in range(0, len(os.listdir('pages'))):
                     col1, col2, col3 = st.columns([1, 4, 1])
                     with col2:
                         st.markdown(
-                            f'<div style="text-align:center; font-size:{font_1}px">Total R${format_valor(valor)}</div>',
+                            f'<div style="text-align:center; font-size:{font_1}px">Total <b>R${format_valor(valor)}</b></div>',
                             unsafe_allow_html=True)
                         st.markdown(
                             f'<div style="text-align:center; font-size:{font_2}px">Entrada: R${format_valor(entrada)}</div>',
