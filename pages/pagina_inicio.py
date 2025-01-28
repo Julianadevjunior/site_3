@@ -58,7 +58,6 @@ for num_page in range(0, len(os.listdir('pages'))):
                 st.write({pasta_images[0][0]})
                 # Carregar e rotacionar imagem com cache
                 st.write(imagem[imagem.index('.'):], num_page)
-
                 st.write(f'images/imovel_{num_page}/0 foto{imagem[imagem.index('.'):]}')
                 img = load_and_rotate_image(imagem, st.session_state["rotations"][0])
                 corrected_image = correct_image_orientation(img)
