@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59d8124c-be6e-451e-8159-7cef00f472b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/pagina_11.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/pagina_12.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/pagina_13.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/pagina_14.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/pagina_15.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.~lock.bd_imoveis.xlsx#" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bd_imoveis.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/bd_imoveis.xlsx" afterDir="false" />
-    </list>
+    <list default="true" id="59d8124c-be6e-451e-8159-7cef00f472b4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,6 +38,11 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/jucar/OneDrive/Área de Trabalho/site_eco&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jucar\Documents\site_3\images" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.pagina_inicio">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="site_3" />
